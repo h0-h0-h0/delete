@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
 
 app.post('/delete', (req, res) => {
   console.log(`DELETE received at http://localhost:${port}`);
+  res.sendFile(resolve(__dirname, 'pages/delete.html'));
 });
 
 app.listen(port, () => {
